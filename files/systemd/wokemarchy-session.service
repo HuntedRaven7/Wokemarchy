@@ -1,0 +1,41 @@
+[Unit]
+Description=Wokemarchy MangoWC Session
+Documentation=https://github.com/mangowm/mango
+After=graphical-session.target
+Wants=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/mango
+Restart=on-failure
+RestartSec=2
+
+# Wayland environment
+Environment=XDG_SESSION_TYPE=wayland
+Environment=XDG_CURRENT_DESKTOP=MangoWC
+Environment=XDG_SESSION_DESKTOP=MangoWC
+Environment=QT_QPA_PLATFORM=wayland
+Environment=GDK_BACKEND=wayland
+Environment=MOZ_ENABLE_WAYLAND=1
+Environment=CLUTTER_BACKEND=wayland
+Environment=SDL_VIDEODRIVER=wayland
+Environment=_JAVA_AWT_WM_NONREPARENTING=1
+
+# fcitx5
+Environment=GTK_IM_MODULE=fcitx
+Environment=QT_IM_MODULE=fcitx
+Environment=XMODIFIERS=@im=fcitx
+Environment=INPUT_METHOD=fcitx
+Environment=SDL_IM_MODULE=fcitx
+
+# Security hardening
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/run/user/%U
+RuntimeDirectory=mango
+RuntimeDirectoryMode=0700
+
+[Install]
+WantedBy=graphical-session.target

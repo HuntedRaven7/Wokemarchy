@@ -1,0 +1,18 @@
+# Environment variables for greetd session
+
+XDG_SESSION_TYPE=wayland
+XDG_CURRENT_DESKTOP=MangoWC
+XDG_SESSION_DESKTOP=MangoWC
+QT_QPA_PLATFORM=wayland
+GDK_BACKEND=wayland
+MOZ_ENABLE_WAYLAND=1
+CLUTTER_BACKEND=wayland
+SDL_VIDEODRIVER=wayland
+_JAVA_AWT_WM_NONREPARENTING=1
+
+# fcitx5
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+INPUT_METHOD=fcitx
+SDL_IM_MODULE=fcitx

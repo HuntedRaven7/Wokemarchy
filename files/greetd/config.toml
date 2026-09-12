@@ -1,0 +1,33 @@
+# greetd configuration for Wokemarchy
+
+[terminal]
+# VT to run on
+vt = 1
+
+# Default session command
+[default_session]
+# Command to start the session (MangoWC)
+command = "mango"
+
+# User to run the greeter as
+user = "greeter"
+
+# Environment variables for the greeter
+[default_session.environment]
+XDG_SESSION_TYPE = "wayland"
+XDG_CURRENT_DESKTOP = "MangoWC"
+XDG_SESSION_DESKTOP = "MangoWC"
+QT_QPA_PLATFORM = "wayland"
+GDK_BACKEND = "wayland"
+MOZ_ENABLE_WAYLAND = "1"
+CLUTTER_BACKEND = "wayland"
+SDL_VIDEODRIVER = "wayland"
+_JAVA_AWT_WM_NONREPARENTING = "1"
+
+# Greeter configuration
+[greeter]
+# Command to run the greeter (tuigreet)
+command = "tuigreet --cmd mango --user-menu --remember-user-session --remember-user --issue --time --asterisks --width 60 --height 20"
+
+# User to run the greeter as
+user = "greeter"

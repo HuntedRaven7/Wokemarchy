@@ -1,0 +1,30 @@
+# BuildStream artifacts
+project.refs/
+cache/
+artifacts/
+build/
+*.log
+
+# OCI images
+*.tar
+*.tar.gz
+*.tar.xz
+
+# Disk images
+*.img
+*.qcow2
+*.raw
+
+# Temporary files
+*.tmp
+*.swp
+*~
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Local config
+.local/

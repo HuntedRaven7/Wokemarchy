@@ -1,0 +1,15 @@
+NAME="Wokemarchy"
+ID=wokemarchy
+ID_LIKE=fedora
+VERSION="rolling"
+VERSION_ID="rolling"
+PRETTY_NAME="Wokemarchy (rolling)"
+ANSI_COLOR="1;35"
+HOME_URL="https://github.com/robin/Wokemarchy"
+SUPPORT_URL="https://github.com/robin/Wokemarchy/issues"
+BUG_REPORT_URL="https://github.com/robin/Wokemarchy/issues"
+VARIANT="MangoWC Edition"
+VARIANT_ID="mango"
+PLATFORM_ID="platform:f40"
+CPE_NAME="cpe:/o:wokemarchy:wokemarchy:rolling"
+LOGO=wokemarchy

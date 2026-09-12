@@ -1,0 +1,32 @@
+# BuildStream ignore patterns
+
+# Build artifacts
+*.log
+*.tar
+*.tar.gz
+*.tar.xz
+*.tar.zst
+
+# Cache directories
+cache/
+artifacts/
+
+# Project refs
+project.refs/
+
+# Local build directory
+build/
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
